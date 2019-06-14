@@ -1,8 +1,6 @@
 # Apple-iCloud-lastest-API
 最新的apple icloud api，亲测成功
 
-- 如果登陆失败，就需要自己填写cookies , 因为 apple 的NSURLSession有自动填充cookies 功能
-
 
 1. 调用signin，使用appid 账号和 密码登陆
 2.  调用accountLogin， 获取用户信息；
@@ -11,3 +9,8 @@
 4.  校验验证码
 5.  刷新dsWebAuthToken， 重新调用accountLogin， 获取用户信息；
 
+
+![](https://upload-images.jianshu.io/upload_images/8533386-500737d85587de44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+- 如果登陆失败，就需要自己填写cookies , 因为 apple 的NSURLSession有自动填充cookies 功能
