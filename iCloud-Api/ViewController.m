@@ -301,8 +301,11 @@
         id   responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
         NSLog(@"listDevices %@",responseObject);
         NSDictionary *device = ((NSArray *)responseObject[@"devices"]).firstObject;
-        self.trustDevice = device;
-        block(device[@"deviceId"], device[@"deviceType"]);
+        
+        if (device) {
+            self.trustDevice = device;
+            block(device[@"deviceId"], device[@"deviceType"]);
+        }
         
     }] resume];
 }
