@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		149DCCC536DB56DC49CDB301 /* libPods-iCloud-Api.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 538F631E082B23C710809B31 /* libPods-iCloud-Api.a */; };
 		6D4ED18122B250660062331C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4ED18022B250660062331C /* AppDelegate.m */; };
 		6D4ED18422B250660062331C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4ED18322B250660062331C /* ViewController.m */; };
 		6D4ED18722B250660062331C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4ED18522B250660062331C /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E5549B9AC0FDBB47BC7E7AF /* Pods-iCloud-Api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCloud-Api.debug.xcconfig"; path = "Target Support Files/Pods-iCloud-Api/Pods-iCloud-Api.debug.xcconfig"; sourceTree = "<group>"; };
+		538F631E082B23C710809B31 /* libPods-iCloud-Api.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCloud-Api.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4ED17C22B250660062331C /* iCloud-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4ED17F22B250660062331C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D4ED18022B250660062331C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		6D4ED18B22B250750062331C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D4ED18D22B250750062331C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D4ED18E22B250750062331C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C07EC0130B9CF944ED40B60F /* Pods-iCloud-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCloud-Api.release.xcconfig"; path = "Target Support Files/Pods-iCloud-Api/Pods-iCloud-Api.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149DCCC536DB56DC49CDB301 /* libPods-iCloud-Api.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209C2C2630FED76F2AB51A12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538F631E082B23C710809B31 /* libPods-iCloud-Api.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D4ED17322B250660062331C = {
 			isa = PBXGroup;
 			children = (
 				6D4ED17E22B250660062331C /* iCloud-Api */,
 				6D4ED17D22B250660062331C /* Products */,
+				A01B3464DB7E5B87F24A6298 /* Pods */,
+				209C2C2630FED76F2AB51A12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = "iCloud-Api";
 			sourceTree = "<group>";
 		};
+		A01B3464DB7E5B87F24A6298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E5549B9AC0FDBB47BC7E7AF /* Pods-iCloud-Api.debug.xcconfig */,
+				C07EC0130B9CF944ED40B60F /* Pods-iCloud-Api.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D4ED19222B250750062331C /* Build configuration list for PBXNativeTarget "iCloud-Api" */;
 			buildPhases = (
+				2DE9E1AFDDD3E03E182F74B1 /* [CP] Check Pods Manifest.lock */,
 				6D4ED17822B250660062331C /* Sources */,
 				6D4ED17922B250660062331C /* Frameworks */,
 				6D4ED17A22B250660062331C /* Resources */,
@@ -135,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DE9E1AFDDD3E03E182F74B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCloud-Api-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D4ED17822B250660062331C /* Sources */ = {
@@ -283,10 +333,12 @@
 		};
 		6D4ED19322B250750062331C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E5549B9AC0FDBB47BC7E7AF /* Pods-iCloud-Api.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iCloud-Api/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +351,12 @@
 		};
 		6D4ED19422B250750062331C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07EC0130B9CF944ED40B60F /* Pods-iCloud-Api.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iCloud-Api/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
