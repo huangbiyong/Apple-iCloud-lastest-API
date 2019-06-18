@@ -33,8 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *appid = @"chhu02@royole.com";
-    NSString *password = @"Hby13407";
+    NSString *appid = @"";
+    NSString *password = @"";
     
     self.icloudApi = [[BYICloudApi alloc] initWithAppid:appid password:password];
     
