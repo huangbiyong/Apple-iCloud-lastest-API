@@ -13,5 +13,16 @@
 ![image.png](https://upload-images.jianshu.io/upload_images/8533386-ba36eeaeb751ed4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+```
+- (void)setupAccount {
+
+   NSString *appid = @"";
+   NSString *password = @"";
+
+   self.icloudApi = [[BYICloudApi alloc] initWithAppid:appid password:password];
+}
+
+```
+
 
 - 如果登陆失败，就需要自己填写cookies , 因为 apple 的NSURLSession有自动填充cookies 功能

@@ -33,11 +33,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupAccount];
+}
+
+- (void)setupAccount {
+    
     NSString *appid = @"";
     NSString *password = @"";
     
     self.icloudApi = [[BYICloudApi alloc] initWithAppid:appid password:password];
-    
 }
 
 
