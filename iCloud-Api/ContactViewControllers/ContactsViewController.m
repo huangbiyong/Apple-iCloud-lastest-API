@@ -2,7 +2,7 @@
 //  ContactsViewController.m
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/17.
+//  Created by huangbiyong on 2019/6/17.
 //  Copyright © 2019 chase. All rights reserved.
 //
 
@@ -20,9 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"联系人";
     self.contacts = [NSMutableArray array];
     [self.tableView registerClass:[ContactCell class] forCellReuseIdentifier:@"ContactCell"];
     
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

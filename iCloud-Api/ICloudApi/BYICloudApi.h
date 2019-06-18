@@ -1,8 +1,8 @@
 //
-//  ICloudApi.h
+//  BYICloudApi.h
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/17.
+//  Created by huangbiyong on 2019/6/18.
 //  Copyright © 2019 chase. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^Success)(NSURLSessionDataTask * _Nullable task, id  _Nullable responseObject);
 typedef void(^Failure)(NSURLSessionDataTask * _Nullable task,  NSError * _Nullable error);
 
-@interface ICloudApi : NSObject
+@interface BYICloudApi : NSObject
 
 @property (strong, nonatomic) NSDictionary *trustDevice; // 信任设备列表
 
@@ -49,7 +49,7 @@ typedef void(^Failure)(NSURLSessionDataTask * _Nullable task,  NSError * _Nullab
 - (void)getPhotosCountSuccess:(Success)success failure:(Failure)failure;
 
 // 获取相册
-- (void)getPhotosListresultsLimit:(NSInteger)resultsLimit start:(NSInteger)start success:(Success)success failure:(Failure)failure;
+- (void)getPhotosListResultsLimit:(NSInteger)resultsLimit start:(NSInteger)start success:(Success)success failure:(Failure)failure;
 
 - (NSDictionary *)photosParameters:(NSInteger)resultsLimit;
 

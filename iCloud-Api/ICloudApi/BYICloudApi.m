@@ -1,15 +1,16 @@
 //
-//  ICloudApi.m
+//  BYICloudApi.m
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/17.
+//  Created by huangbiyong on 2019/6/18.
 //  Copyright © 2019 chase. All rights reserved.
 //
 
-#import "ICloudApi.h"
+#import "BYICloudApi.h"
+
 #import <AFNetworking.h>
 
-@interface ICloudApi ()
+@interface BYICloudApi ()
 
 @property (nonatomic, strong) NSString *appid;
 @property (nonatomic, strong) NSString *password;
@@ -19,7 +20,7 @@
 
 @end
 
-@implementation ICloudApi
+@implementation BYICloudApi
 
 - (instancetype)initWithAppid:(NSString *)appid password:(NSString *)password {
     self = [super init];
@@ -167,13 +168,13 @@
     self.isPhoneCode = YES;
     [self listDevicesWithSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-
+        
         NSDictionary *device = ((NSArray *)responseObject[@"devices"]).firstObject;
         if (!device) {
             return ;
         }
         self.trustDevice = device;
-       
+        
         
         NSDictionary *json = @{
                                @"mode" : @"sms",
@@ -243,7 +244,7 @@
         
         [session POST:@"https://idmsa.apple.com/appleauth/auth/verify/trusteddevice/securitycode" parameters:json progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
-         
+            
             NSHTTPURLResponse *r = (NSHTTPURLResponse *)task.response;
             
             if (r.statusCode < 300) {
@@ -431,7 +432,7 @@
     
     url = [NSString stringWithFormat:@"%@/database/1/com.apple.photos.cloud/production/private/zones/list?", url];
     
-
+    
     NSMutableArray *keyValues = [NSMutableArray array];
     [json enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         [keyValues addObject:[NSString stringWithFormat:@"%@=%@" ,key,obj]];
@@ -528,7 +529,7 @@
 }
 
 
-- (void)getPhotosListresultsLimit:(NSInteger)resultsLimit start:(NSInteger)start success:(Success)success failure:(Failure)failure {
+- (void)getPhotosListResultsLimit:(NSInteger)resultsLimit start:(NSInteger)start success:(Success)success failure:(Failure)failure {
     
     [self getZoneListSuccess:^(NSURLSessionDataTask * _Nullable task, id  _Nullable responseObject) {
         
@@ -622,7 +623,6 @@
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[dataStr dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
     return dict;
 }
-
 
 
 @end

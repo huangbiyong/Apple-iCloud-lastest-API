@@ -2,7 +2,7 @@
 //  PhotosCell.m
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/18.
+//  Created by huangbiyong on 2019/6/18.
 //  Copyright © 2019 chase. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  NSString+Extension.h
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/18.
+//  Created by huangbiyong on 2019/6/18.
 //  Copyright © 2019 chase. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)filePath:(NSString *)filenameEnc;
 
-+ (BOOL)exist:(NSString *)filenameEnc;
++ (BOOL)exist:(NSString *)filePath;
 
 @end
 

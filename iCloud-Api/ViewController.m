@@ -2,13 +2,13 @@
 //  ViewController.m
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/13.
+//  Created by huangbiyong on 2019/6/13.
 //  Copyright © 2019 chase. All rights reserved.
 //
 
 #import "ViewController.h"
 
-#import "ICloudApi.h"
+#import "BYICloudApi.h"
 #import "AccountViewController.h"
 
 
@@ -22,7 +22,7 @@
 
 @property (assign, nonatomic) BOOL isPhoneCode; // 判断是哪种验证码
 
-@property (nonatomic, strong) ICloudApi *icloudApi;
+@property (nonatomic, strong) BYICloudApi *icloudApi;
 
 @end
 
@@ -33,10 +33,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *appid = @"";
-    NSString *password = @"";
+    NSString *appid = @"chhu02@royole.com";
+    NSString *password = @"Hby13407";
     
-    self.icloudApi = [[ICloudApi alloc] initWithAppid:appid password:password];
+    self.icloudApi = [[BYICloudApi alloc] initWithAppid:appid password:password];
     
 }
 

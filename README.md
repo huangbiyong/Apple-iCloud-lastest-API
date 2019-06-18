@@ -10,7 +10,8 @@
 5.  刷新dsWebAuthToken， 重新调用accountLogin， 获取用户信息；
 
 
-![](https://upload-images.jianshu.io/upload_images/8533386-500737d85587de44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/8533386-ba36eeaeb751ed4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 
 - 如果登陆失败，就需要自己填写cookies , 因为 apple 的NSURLSession有自动填充cookies 功能

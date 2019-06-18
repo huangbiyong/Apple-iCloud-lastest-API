@@ -2,7 +2,7 @@
 //  PhotosViewControllers.m
 //  iCloud-Api
 //
-//  Created by chhu02 on 2019/6/18.
+//  Created by huangbiyong on 2019/6/18.
 //  Copyright © 2019 chase. All rights reserved.
 //
 
@@ -39,28 +39,16 @@ static NSString * const reuseIdentifier = @"PhotosCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"相册";
+    
     self.photos = [NSMutableArray array];
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
     [self.collectionView registerClass:[PhotosCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
+
+    [self setupMJ];
+    
     __weak PhotosViewControllers *weakSelf = self;
-    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [weakSelf loadPhotosList:0];
-    }];
-    
-    
-    self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-   
-        if (weakSelf.photos.count >= weakSelf.photosCount) {
-            [weakSelf.collectionView.mj_header endRefreshing];
-            [weakSelf.collectionView.mj_footer endRefreshing];
-            return;
-        }
-        
-        [weakSelf loadPhotosList:self.photos.count];
-     
-    }];
-    
     [self.icloudApi getPhotosCountSuccess:^(NSURLSessionDataTask * _Nullable task, id  _Nullable responseObject) {
         NSLog(@"%@", responseObject);
         
@@ -78,15 +66,29 @@ static NSString * const reuseIdentifier = @"PhotosCell";
 }
 
 
+- (void)setupMJ {
+    
+    __weak PhotosViewControllers *weakSelf = self;
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [weakSelf loadPhotosList:0];
+    }];
+
+    self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        
+        if (weakSelf.photos.count >= weakSelf.photosCount) {
+            [weakSelf.collectionView.mj_header endRefreshing];
+            [weakSelf.collectionView.mj_footer endRefreshing];
+            return;
+        }
+        [weakSelf loadPhotosList:self.photos.count];
+        
+    }];
+}
+
 - (void)loadPhotosList:(NSInteger)start {
     
-//    if (self.photos.count >= self.photosCount) {
-//        [self.collectionView.mj_header endRefreshing];
-//        [self.collectionView.mj_footer endRefreshing];
-//        return;
-//    }
     
-    [self.icloudApi getPhotosListresultsLimit:100 start:start success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.icloudApi getPhotosListResultsLimit:100 start:start success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [self.collectionView.mj_header endRefreshing];
         [self.collectionView.mj_footer endRefreshing];
@@ -103,11 +105,9 @@ static NSString * const reuseIdentifier = @"PhotosCell";
             }
         }
         
-        
         [self.collectionView reloadData];
         
-        
-        
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nullable error) {
         
         [self.collectionView.mj_header endRefreshing];
