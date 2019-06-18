@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		149DCCC536DB56DC49CDB301 /* libPods-iCloud-Api.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 538F631E082B23C710809B31 /* libPods-iCloud-Api.a */; };
+		6D3AF1A122B7323100EEA774 /* ICloudApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3AF1A022B7323100EEA774 /* ICloudApi.m */; };
 		6D4ED18122B250660062331C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4ED18022B250660062331C /* AppDelegate.m */; };
 		6D4ED18422B250660062331C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4ED18322B250660062331C /* ViewController.m */; };
 		6D4ED18722B250660062331C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4ED18522B250660062331C /* Main.storyboard */; };
 		6D4ED18922B250750062331C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4ED18822B250750062331C /* Assets.xcassets */; };
 		6D4ED18C22B250750062331C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4ED18A22B250750062331C /* LaunchScreen.storyboard */; };
 		6D4ED18F22B250750062331C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4ED18E22B250750062331C /* main.m */; };
+		6D7A687922B89158002807D9 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7A687822B89158002807D9 /* NSString+Extension.m */; };
+		6D7A687B22B8C4AB002807D9 /* photosCountParameter in Resources */ = {isa = PBXBuildFile; fileRef = 6D7A687A22B8C4AB002807D9 /* photosCountParameter */; };
+		6DAF8A0122B76F8C00FC6592 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF89FF22B76F8C00FC6592 /* AccountViewController.m */; };
+		6DAF8A0222B76F8C00FC6592 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DAF8A0022B76F8C00FC6592 /* AccountViewController.xib */; };
+		6DAF8A0522B77E6C00FC6592 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF8A0422B77E6C00FC6592 /* ContactsViewController.m */; };
+		6DAF8A0B22B7807600FC6592 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF8A0922B7807600FC6592 /* ContactCell.m */; };
+		6DAF8A0E22B792A300FC6592 /* photosParameter in Resources */ = {isa = PBXBuildFile; fileRef = 6DAF8A0D22B792A300FC6592 /* photosParameter */; };
+		6DAF8A1522B882C800FC6592 /* PhotosViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF8A1422B882C800FC6592 /* PhotosViewControllers.m */; };
+		6DAF8A1922B8832100FC6592 /* PhotosCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF8A1722B8832100FC6592 /* PhotosCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E5549B9AC0FDBB47BC7E7AF /* Pods-iCloud-Api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCloud-Api.debug.xcconfig"; path = "Target Support Files/Pods-iCloud-Api/Pods-iCloud-Api.debug.xcconfig"; sourceTree = "<group>"; };
 		538F631E082B23C710809B31 /* libPods-iCloud-Api.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iCloud-Api.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3AF19F22B7323100EEA774 /* ICloudApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICloudApi.h; sourceTree = "<group>"; };
+		6D3AF1A022B7323100EEA774 /* ICloudApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICloudApi.m; sourceTree = "<group>"; };
 		6D4ED17C22B250660062331C /* iCloud-Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCloud-Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4ED17F22B250660062331C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D4ED18022B250660062331C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +41,21 @@
 		6D4ED18B22B250750062331C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D4ED18D22B250750062331C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D4ED18E22B250750062331C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D7A687722B89158002807D9 /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		6D7A687822B89158002807D9 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		6D7A687A22B8C4AB002807D9 /* photosCountParameter */ = {isa = PBXFileReference; lastKnownFileType = text; path = photosCountParameter; sourceTree = "<group>"; };
+		6DAF89FE22B76F8C00FC6592 /* AccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		6DAF89FF22B76F8C00FC6592 /* AccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		6DAF8A0022B76F8C00FC6592 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		6DAF8A0322B77E6C00FC6592 /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		6DAF8A0422B77E6C00FC6592 /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		6DAF8A0822B7807600FC6592 /* ContactCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
+		6DAF8A0922B7807600FC6592 /* ContactCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
+		6DAF8A0D22B792A300FC6592 /* photosParameter */ = {isa = PBXFileReference; lastKnownFileType = text; path = photosParameter; sourceTree = "<group>"; };
+		6DAF8A1322B882C800FC6592 /* PhotosViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewControllers.h; sourceTree = "<group>"; };
+		6DAF8A1422B882C800FC6592 /* PhotosViewControllers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewControllers.m; sourceTree = "<group>"; };
+		6DAF8A1622B8832100FC6592 /* PhotosCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosCell.h; sourceTree = "<group>"; };
+		6DAF8A1722B8832100FC6592 /* PhotosCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosCell.m; sourceTree = "<group>"; };
 		C07EC0130B9CF944ED40B60F /* Pods-iCloud-Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCloud-Api.release.xcconfig"; path = "Target Support Files/Pods-iCloud-Api/Pods-iCloud-Api.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,10 +100,16 @@
 		6D4ED17E22B250660062331C /* iCloud-Api */ = {
 			isa = PBXGroup;
 			children = (
+				6DAF8A0622B77ED400FC6592 /* ICloudApi */,
+				6DAF8A0F22B8802C00FC6592 /* PhotosViewControllers */,
+				6DAF8A0722B7802500FC6592 /* ContactViewControllers */,
 				6D4ED17F22B250660062331C /* AppDelegate.h */,
 				6D4ED18022B250660062331C /* AppDelegate.m */,
 				6D4ED18222B250660062331C /* ViewController.h */,
 				6D4ED18322B250660062331C /* ViewController.m */,
+				6DAF89FE22B76F8C00FC6592 /* AccountViewController.h */,
+				6DAF89FF22B76F8C00FC6592 /* AccountViewController.m */,
+				6DAF8A0022B76F8C00FC6592 /* AccountViewController.xib */,
 				6D4ED18522B250660062331C /* Main.storyboard */,
 				6D4ED18822B250750062331C /* Assets.xcassets */,
 				6D4ED18A22B250750062331C /* LaunchScreen.storyboard */,
@@ -84,6 +117,41 @@
 				6D4ED18E22B250750062331C /* main.m */,
 			);
 			path = "iCloud-Api";
+			sourceTree = "<group>";
+		};
+		6DAF8A0622B77ED400FC6592 /* ICloudApi */ = {
+			isa = PBXGroup;
+			children = (
+				6D3AF19F22B7323100EEA774 /* ICloudApi.h */,
+				6D3AF1A022B7323100EEA774 /* ICloudApi.m */,
+				6DAF8A0D22B792A300FC6592 /* photosParameter */,
+				6D7A687A22B8C4AB002807D9 /* photosCountParameter */,
+				6D7A687722B89158002807D9 /* NSString+Extension.h */,
+				6D7A687822B89158002807D9 /* NSString+Extension.m */,
+			);
+			path = ICloudApi;
+			sourceTree = "<group>";
+		};
+		6DAF8A0722B7802500FC6592 /* ContactViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DAF8A0322B77E6C00FC6592 /* ContactsViewController.h */,
+				6DAF8A0422B77E6C00FC6592 /* ContactsViewController.m */,
+				6DAF8A0822B7807600FC6592 /* ContactCell.h */,
+				6DAF8A0922B7807600FC6592 /* ContactCell.m */,
+			);
+			path = ContactViewControllers;
+			sourceTree = "<group>";
+		};
+		6DAF8A0F22B8802C00FC6592 /* PhotosViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DAF8A1322B882C800FC6592 /* PhotosViewControllers.h */,
+				6DAF8A1422B882C800FC6592 /* PhotosViewControllers.m */,
+				6DAF8A1622B8832100FC6592 /* PhotosCell.h */,
+				6DAF8A1722B8832100FC6592 /* PhotosCell.m */,
+			);
+			path = PhotosViewControllers;
 			sourceTree = "<group>";
 		};
 		A01B3464DB7E5B87F24A6298 /* Pods */ = {
@@ -106,6 +174,7 @@
 				6D4ED17822B250660062331C /* Sources */,
 				6D4ED17922B250660062331C /* Frameworks */,
 				6D4ED17A22B250660062331C /* Resources */,
+				7964F762306AD46ECC5CDD48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,7 +224,10 @@
 			files = (
 				6D4ED18C22B250750062331C /* LaunchScreen.storyboard in Resources */,
 				6D4ED18922B250750062331C /* Assets.xcassets in Resources */,
+				6DAF8A0222B76F8C00FC6592 /* AccountViewController.xib in Resources */,
 				6D4ED18722B250660062331C /* Main.storyboard in Resources */,
+				6DAF8A0E22B792A300FC6592 /* photosParameter in Resources */,
+				6D7A687B22B8C4AB002807D9 /* photosCountParameter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +256,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7964F762306AD46ECC5CDD48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCloud-Api/Pods-iCloud-Api-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCloud-Api/Pods-iCloud-Api-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,9 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3AF1A122B7323100EEA774 /* ICloudApi.m in Sources */,
+				6DAF8A1522B882C800FC6592 /* PhotosViewControllers.m in Sources */,
+				6DAF8A0522B77E6C00FC6592 /* ContactsViewController.m in Sources */,
+				6DAF8A1922B8832100FC6592 /* PhotosCell.m in Sources */,
 				6D4ED18422B250660062331C /* ViewController.m in Sources */,
+				6D7A687922B89158002807D9 /* NSString+Extension.m in Sources */,
 				6D4ED18F22B250750062331C /* main.m in Sources */,
 				6D4ED18122B250660062331C /* AppDelegate.m in Sources */,
+				6DAF8A0B22B7807600FC6592 /* ContactCell.m in Sources */,
+				6DAF8A0122B76F8C00FC6592 /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +438,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72U33C4H3Q;
 				INFOPLIST_FILE = "iCloud-Api/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,8 +457,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72U33C4H3Q;
 				INFOPLIST_FILE = "iCloud-Api/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

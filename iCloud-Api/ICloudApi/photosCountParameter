@@ -1,0 +1,1 @@
+{"query":{"recordType":"HyperionIndexCountLookup","filterBy":{"fieldName":"indexCountID","comparator":"IN","fieldValue":{"value":["CPLAssetByAssetDateWithoutHiddenOrDeleted"],"type":"STRING_LIST"}}},"zoneID":{"zoneName":"PrimarySync","ownerRecordName":"_d17df138e58d35c411f70e19b483596a","zoneType":"REGULAR_CUSTOM_ZONE"}}

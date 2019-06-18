@@ -7,5 +7,6 @@ target 'iCloud-Api' do
 
   # Pods for iCloud-Api
     pod 'AFNetworking'
+    pod 'MJRefresh'
 
 end
